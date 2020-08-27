@@ -1,0 +1,7 @@
+@mixin project-btn{
+    text-transform: uppercase;
+    color: var(--color-white);
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    border: 2px solid var(--text-primary);
+}

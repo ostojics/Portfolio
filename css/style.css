@@ -140,6 +140,62 @@
     .about .about-desc-img {
       flex: 1; }
 
+.projects {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .projects .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem; }
+    .projects .project-content-name {
+      color: var(--color-white);
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 2rem; }
+    .projects .project-content-img {
+      width: 50%;
+      height: 50%;
+      border-radius: 1rem; }
+    .projects .project-content-desc {
+      color: var(--color-white);
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: 1.5rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .projects .project-content-desc-add1 {
+        margin: 1rem 0;
+        font-style: italic; }
+      .projects .project-content-desc-add2 {
+        color: var(--text-primary); }
+    .projects .project-content-btns {
+      width: 80%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 1.5rem; }
+      .projects .project-content-btns a {
+        text-decoration: none; }
+      .projects .project-content-btns-demo {
+        text-transform: uppercase;
+        color: var(--color-white);
+        padding: 0.5rem 2rem;
+        border-radius: 1rem;
+        border: 2px solid var(--text-primary); }
+      .projects .project-content-btns-code {
+        text-transform: uppercase;
+        color: var(--color-white);
+        padding: 0.5rem 2rem;
+        border-radius: 1rem;
+        border: 2px solid var(--text-primary); }
+
 .head .nav {
   min-height: 5vh; }
 

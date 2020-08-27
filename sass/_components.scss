@@ -129,49 +129,123 @@
     }
 }
 
-.about{
-    background-color: var(--bg-primary);
-    color: whitesmoke;
-    min-height: 95vh;
-    text-align: center;
+    .about{
+        background-color: var(--bg-primary);
+        color: whitesmoke;
+        min-height: 95vh;
+        text-align: center;
 
-    .about-desc{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 2rem;
-        margin-top: 2rem;
-        
-    &-container{
+        .about-desc{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            
+        &-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+                &-text{
+                    font-weight: 400;
+                    font-size: 2rem;
+
+                    &-icons{
+                    margin-top: 2rem;
+                    margin-bottom: 1.2rem;
+                    font-size: 1.5rem;
+                    }
+                }
+
+                &-icons{
+                    display: flex;
+                    justify-content: space-around;
+                    width: 50%;
+                    i{
+                        font-size: 2rem;
+                        color: var(--text-primary);
+                    }
+                }
+            }
+
+            &-img{
+            flex: 1;
+            }
+        }
+    }
+
+    .projects{
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex: 1;
-            &-text{
-                font-weight: 400;
-                font-size: 2rem;
 
-                &-icons{
-                   margin-top: 2rem;
-                   margin-bottom: 1.2rem;
-                   font-size: 1.5rem;
-                }
-            }
+        .project{
 
-            &-icons{
+            &-content{
                 display: flex;
-                justify-content: space-around;
-                width: 50%;
-                i{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2rem;
+    
+                &-name{
+                    color: var(--color-white);
                     font-size: 2rem;
-                    color: var(--text-primary);
+                    font-weight: 400;
+                    margin-bottom: 2rem;
+                }
+    
+                &-img{
+                    width: 50%;
+                    height: 50%;
+                    border-radius: 1rem;
+                }
+    
+                &-desc{
+                    color: var(--color-white);
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    margin: 1.5rem 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+    
+                    &-add1{
+                        margin: 1rem 0;
+                        font-style: italic;
+                    }
+    
+                    &-add2{
+                        color: var(--text-primary);
+                    }
+                }
+
+                &-btns{
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin-top: 1.5rem;
+
+                    a{
+                        text-decoration: none;
+                    }
+
+                    &-demo{
+                        @include project-btn;
+                    }
+
+                    &-code{
+                        @include project-btn;
+
+                    }
                 }
             }
-        }
-
-        &-img{
-           flex: 1;
+    
         }
     }
-}
