@@ -156,7 +156,8 @@
       color: var(--color-white);
       font-size: 2rem;
       font-weight: 400;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      text-transform: uppercase; }
     .projects .project-content-img {
       width: 50%;
       height: 50%;
@@ -172,7 +173,8 @@
       align-items: center; }
       .projects .project-content-desc-add1 {
         margin: 1rem 0;
-        font-style: italic; }
+        font-style: italic;
+        font-weight: 300; }
       .projects .project-content-desc-add2 {
         color: var(--text-primary); }
     .projects .project-content-btns {
