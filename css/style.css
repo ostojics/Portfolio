@@ -1,5 +1,6 @@
 :root {
   --color-white: whitesmoke;
+  --color-grey: #999;
   --bg-primary: #08173F;
   --text-primary: #6C63FF; }
 
@@ -197,6 +198,86 @@
         padding: 0.5rem 2rem;
         border-radius: 1rem;
         border: 2px solid var(--text-primary); }
+
+.contact {
+  min-height: 100vh;
+  display: flex;
+  margin-top: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contact h2 {
+    margin-bottom: 2rem; }
+  .contact .book {
+    width: 90%;
+    height: 95vh;
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../imgs/john-towner-JgOeRuGD_Y4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+    .contact .book-form {
+      width: 50%;
+      padding: 3.75rem; }
+  .contact .form-group:not(:last-child) {
+    margin-bottom: 2rem; }
+  .contact .form-input {
+    margin: 0 auto;
+    width: 50%;
+    font-size: 0.9375rem;
+    padding: 0.9375rem 1.25rem;
+    border-radius: 4px;
+    background-color: var(--color-white, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block; }
+    .contact .form-input:focus {
+      outline: none;
+      box-shadow: 0 10px 1.25rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid var(--text-primary); }
+    .contact .form-input::-webkit-input-placeholder {
+      color: var(--color-grey); }
+  .contact .form-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-left: 3rem;
+    margin-top: 0.4375rem;
+    display: block;
+    transition: all .3s; }
+  .contact .form-input:placeholder-shown + label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2.5rem); }
+  .contact .form textarea::placeholder {
+    font-size: 1.2rem; }
+  .contact .form-btn {
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    border: 2px solid var(--text-primary);
+    background-color: transparent;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    cursor: pointer; }
+  .contact .form-social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 10%; }
+    .contact .form-social a {
+      color: black;
+      font-size: 1.5rem;
+      display: inline-block;
+      margin: 0 0.5rem;
+      transition: all .2s;
+      backface-visibility: hidden; }
+      .contact .form-social a:hover {
+        margin-top: -0.75rem; }
 
 .head .nav {
   min-height: 5vh; }
