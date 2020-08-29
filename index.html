@@ -11,14 +11,32 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation-checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation-btn">
+                <span class="navigation-icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation-background">&nbsp;</div>
+
+            <nav class="navigation-nav">
+                <ul class="navigation-list">
+                    <li class="navigation-item"><a href="#about" class="navigation-link"><i class="fas fa-user"></i>About</a></li>
+                    <li class="navigation-item"><a href="#projects" class="navigation-link"><i class="fas fa-project-diagram"></i>Projects</a></li>
+                    <li class="navigation-item"><a href="#contact" class="navigation-link"><i class="fas fa-envelope-open"></i>Contact</a></li>
+                    <li class="navigation-item"><a href="#" class="navigation-link"><i class="fas fa-cloud-download-alt"></i>Resume</a></li>
+                </ul>
+            </nav>
+        </div>
         <main>
             <section class="head">
                 <nav class="nav">
                         <ul class="nav-links">
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="#">Resume</a></li>
+                            <li><a href="#about"><i class="fas fa-user"></i>About</a></li>
+                            <li><a href="#projects"><i class="fas fa-project-diagram"></i>Projects</a></li>
+                            <li><a href="#contact"><i class="fas fa-envelope-open"></i>Contact</a></li>
+                            <li><a href="#"><i class="fas fa-cloud-download-alt"></i>Resume</a></li>
                         </ul>
                 </nav>
                 <div class="hero">
@@ -58,7 +76,7 @@
                         </div>
                     </div>
                     <div class="about-desc-img">
-                        <img src="imgs/coding-pic.svg" alt="Programmer image" width="400px" height="400px">
+                        <img src="imgs/coding-pic.svg" alt="Programmer image">
                     </div>
                 </div>
             </section>
@@ -114,6 +132,11 @@
                     </div>
                 </div>
             </section>
+            <footer class="footer">
+                    <h3 class="footer-copy">
+                        Slobodan Ostojić &copy; 2020
+                    </h3>
+            </footer>
         </main>
     </body>
 </html>
