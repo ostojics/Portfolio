@@ -236,10 +236,21 @@
 
                     &-demo{
                         @include project-btn;
+
+                       &:hover{
+                           background-color: var(--text-primary);
+                           color: var(--color-white);
+                       }
                     }
 
                     &-code{
                         @include project-btn;
+
+                        
+                       &:hover{
+                        background-color: var(--text-primary);
+                        color: var(--color-white);
+                    }
 
                     }
                 }
@@ -337,7 +348,12 @@
                 color: var(--text-primary);
                 font-size: 1.2rem;
                 cursor: pointer;
+                transition: all .2s;
 
+                &:hover{
+                    background-color: var(--text-primary);
+                    color: var(--color-white);
+                }
             }
 
             &-social{
