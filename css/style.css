@@ -300,7 +300,6 @@
 
 .footer {
   min-height: 5vh;
-  min-width: 100vw;
   text-align: center;
   padding: 1rem;
   margin: 2rem 0; }
@@ -422,7 +421,6 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
   background-color: var(--bg-primary); }
 
 .section-text {
