@@ -195,16 +195,24 @@
         text-decoration: none; }
       .projects .project-content-btns-demo {
         text-transform: uppercase;
-        color: var(--color-white);
+        color: var(--text-primary);
         padding: 0.5rem 2rem;
         border-radius: 1rem;
-        border: 2px solid var(--text-primary); }
+        border: 2px solid var(--text-primary);
+        transition: all .2s; }
+        .projects .project-content-btns-demo:hover {
+          background-color: var(--text-primary);
+          color: var(--color-white); }
       .projects .project-content-btns-code {
         text-transform: uppercase;
-        color: var(--color-white);
+        color: var(--text-primary);
         padding: 0.5rem 2rem;
         border-radius: 1rem;
-        border: 2px solid var(--text-primary); }
+        border: 2px solid var(--text-primary);
+        transition: all .2s; }
+        .projects .project-content-btns-code:hover {
+          background-color: var(--text-primary);
+          color: var(--color-white); }
 
 .contact {
   min-height: 100vh;
@@ -269,7 +277,11 @@
     background-color: transparent;
     color: var(--text-primary);
     font-size: 1.2rem;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all .2s; }
+    .contact .form-btn:hover {
+      background-color: var(--text-primary);
+      color: var(--color-white); }
   .contact .form-social {
     display: flex;
     justify-content: space-around;
