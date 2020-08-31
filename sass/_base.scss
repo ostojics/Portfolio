@@ -10,15 +10,68 @@ html {
 
 body{
     font-family: 'Roboto', sans-serif;
-    // overflow-x: hidden;
     background-color: var(--bg-primary);
+
+    @include respond(big-desktop){
+        font-size: 20px;
+        .projects,
+        .contact{
+            margin-top: -3rem;
+        }
+    }
+
+    @include respond(tab-port){
+        .nav{
+            visibility: hidden;
+        }
+        
+        .navigation{
+            display: block!important;
+        }
+
+        .about{
+            &-desc{
+                &-container{
+                    &-text{
+                        font-size: 1.5rem!important;
+                    }
+
+                    &-icons{
+                        width: 70%!important;
+                    }
+                }
+            }
+        }
+
+        .projects{
+            .project{
+                &-content{
+
+                    img{
+                        width: 70%;
+                        height: 70%;
+                    }
+
+                    &-btns{
+                        width: 70%;
+                        justify-content: space-between;
+                    }
+
+                    &-desc{
+                        text-align: center;
+                        padding: 0 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    
 }
-
-
-
 
 .section-text{
     font-size: 4rem;
     font-weight: 500;
     color: var(--text-primary);
 }
+
