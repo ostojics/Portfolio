@@ -114,7 +114,6 @@
 .about {
   background-color: var(--bg-primary);
   color: whitesmoke;
-  min-height: 95vh;
   text-align: center; }
   .about .about-desc {
     display: flex;
@@ -150,6 +149,7 @@
 
 .projects {
   min-height: 100vh;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,26 +193,32 @@
       margin-top: 1.5rem; }
       .projects .project-content-btns a {
         text-decoration: none; }
+        .projects .project-content-btns a i {
+          margin-left: 0.5rem; }
       .projects .project-content-btns-demo {
         text-transform: uppercase;
-        color: var(--text-primary);
-        padding: 0.5rem 2rem;
-        border-radius: 1rem;
-        border: 2px solid var(--text-primary);
-        transition: all .2s; }
-        .projects .project-content-btns-demo:hover {
-          background-color: var(--text-primary);
-          color: var(--color-white); }
+        color: var(--color-white);
+        padding: 0.5rem 1.5rem;
+        border-radius: 2px;
+        border: 2px solid var(--color-white);
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-white) 50%);
+        background-size: 230%;
+        transition: all .3s; }
+        .projects .project-content-btns-demo:hover, .projects .project-content-btns-demo:active {
+          background-position: 100%;
+          color: var(--text-primary); }
       .projects .project-content-btns-code {
         text-transform: uppercase;
-        color: var(--text-primary);
-        padding: 0.5rem 2rem;
-        border-radius: 1rem;
-        border: 2px solid var(--text-primary);
-        transition: all .2s; }
-        .projects .project-content-btns-code:hover {
-          background-color: var(--text-primary);
-          color: var(--color-white); }
+        color: var(--color-white);
+        padding: 0.5rem 1.5rem;
+        border-radius: 2px;
+        border: 2px solid var(--color-white);
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-white) 50%);
+        background-size: 230%;
+        transition: all .3s; }
+        .projects .project-content-btns-code:hover, .projects .project-content-btns-code:active {
+          background-position: 100%;
+          color: var(--text-primary); }
 
 .contact {
   min-height: 100vh;
@@ -309,7 +315,8 @@
     font-weight: 300; }
 
 .navigation {
-  z-index: 10; }
+  z-index: 10;
+  display: none; }
   .navigation-checkbox {
     display: none; }
   .navigation-btn {
@@ -422,6 +429,30 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--bg-primary); }
+  @media only screen and (min-width: 112.5em) {
+    body {
+      font-size: 20px; }
+      body .projects,
+      body .contact {
+        margin-top: -3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    body .nav {
+      visibility: hidden; }
+    body .navigation {
+      display: block !important; }
+    body .about-desc-container-text {
+      font-size: 1.5rem !important; }
+    body .about-desc-container-icons {
+      width: 70% !important; }
+    body .projects .project-content img {
+      width: 70%;
+      height: 70%; }
+    body .projects .project-content-btns {
+      width: 70%;
+      justify-content: space-between; }
+    body .projects .project-content-desc {
+      text-align: center;
+      padding: 0 0.5rem; } }
 
 .section-text {
   font-size: 4rem;

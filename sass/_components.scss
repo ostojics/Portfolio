@@ -124,7 +124,6 @@
     .about{
         background-color: var(--bg-primary);
         color: whitesmoke;
-        min-height: 95vh;
         text-align: center;
 
         .about-desc{
@@ -174,6 +173,7 @@
 
     .projects{
         min-height: 100vh;
+        margin-top: 3rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -232,14 +232,18 @@
 
                     a{
                         text-decoration: none;
+                        i{
+                            margin-left: 0.5rem;
+                        }
                     }
 
                     &-demo{
                         @include project-btn;
 
-                       &:hover{
-                           background-color: var(--text-primary);
-                           color: var(--color-white);
+                       &:hover,
+                       &:active{
+                           background-position: 100%;
+                           color: var(--text-primary);
                        }
                     }
 
@@ -247,11 +251,11 @@
                         @include project-btn;
 
                         
-                       &:hover{
-                        background-color: var(--text-primary);
-                        color: var(--color-white);
-                    }
-
+                       &:hover,
+                       &:active{
+                           background-position: 100%;
+                           color: var(--text-primary);
+                       }
                     }
                 }
             }
@@ -385,6 +389,7 @@
     // SECONDARY NAVIGATION
     .navigation{
         z-index: 10;
+        display: none;
 
         &-checkbox{
             display: none;
