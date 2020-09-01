@@ -425,16 +425,22 @@
 
 html {
   scroll-behavior: smooth; }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 18px; } }
+
+.section-text {
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--text-primary); }
 
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--bg-primary); }
   @media only screen and (min-width: 112.5em) {
-    body {
-      font-size: 20px; }
-      body .projects,
-      body .contact {
-        margin-top: -3rem; } }
+    body .projects,
+    body .contact {
+      margin-top: -3rem; } }
   @media only screen and (max-width: 56.25em) {
     body .nav {
       visibility: hidden; }
@@ -444,17 +450,89 @@ body {
       font-size: 1.5rem !important; }
     body .about-desc-container-icons {
       width: 70% !important; }
+    body .about-desc-img img {
+      width: 70% !important;
+      height: 70% !important; }
     body .projects .project-content img {
-      width: 70%;
-      height: 70%; }
+      width: 70% !important;
+      height: 70% !important; }
     body .projects .project-content-btns {
       width: 70%;
       justify-content: space-between; }
     body .projects .project-content-desc {
       text-align: center;
       padding: 0 0.5rem; } }
-
-.section-text {
-  font-size: 4rem;
-  font-weight: 500;
-  color: var(--text-primary); }
+  @media only screen and (max-width: 43.75em) {
+    body .hero .container .hero-text-name {
+      font-size: 3.5rem; }
+    body .hero .container .hero-text-role {
+      font-size: 2rem; }
+    body .hero .container .hero-social {
+      width: 35%; }
+    body .about-desc-container-text {
+      font-size: 1.3rem !important; }
+    body .about-desc-container-icons {
+      width: 90% !important; }
+    body .contact .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 70%, transparent 70%), url(../imgs/john-towner-JgOeRuGD_Y4-unsplash.jpg); }
+      body .contact .book-form {
+        width: 70%; } }
+  @media only screen and (max-width: 37.5em) {
+    body .section-text {
+      font-size: 3.5rem; }
+    body .hero .container .hero-text-name {
+      font-size: 3rem; }
+    body .hero .container .hero-text-role {
+      font-size: 1.5rem; }
+    body .about-desc-container-text {
+      font-size: 1rem !important; }
+      body .about-desc-container-text-icons {
+        font-size: 1.3rem !important; }
+    body .projects .project-content-desc {
+      font-size: 1.3rem; }
+    body .contact .book {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url(../imgs/john-towner-JgOeRuGD_Y4-unsplash.jpg);
+      background-size: cover; }
+      body .contact .book-form {
+        width: 100%; }
+    body .contact .form-input {
+      width: 100%; }
+    body .navigation-btn {
+      right: 1.75rem; }
+    body .navigation-background {
+      right: 2.0625rem; } }
+  @media only screen and (max-width: 33.125em) {
+    body .hero .container .hero-text-name {
+      font-size: 2.5rem; }
+    body .hero .container .hero-text-role {
+      font-size: 1.5rem; }
+    body .about-desc-container-text {
+      font-size: 1.5rem !important; }
+      body .about-desc-container-text-icons {
+        font-size: 2rem !important; }
+    body .about-desc .about-desc-container-icons {
+      width: 70% !important; }
+    body .about-desc-img {
+      display: none; } }
+  @media only screen and (max-width: 27.5em) {
+    body .hero .container .hero-text-name {
+      font-size: 2rem; }
+    body .hero .container .hero-text-role {
+      font-size: 1.2rem; }
+    body .hero .container .hero-social {
+      width: 50%; }
+      body .hero .container .hero-social a {
+        font-size: 2rem; }
+    body .about-desc-container-text {
+      font-size: 1.3rem !important; }
+      body .about-desc-container-text-icons {
+        font-size: 1.5rem !important; }
+    body .about-desc .about-desc-container-icons {
+      width: 80% !important; }
+    body .about-desc-img {
+      display: none; }
+    body .projects .project-content-btns-demo, body .projects .project-content-btns-code {
+      font-size: 0.8rem;
+      padding: 0.5rem 1.2rem; }
+    body .projects .project-content-desc {
+      font-size: 1.15rem; } }
