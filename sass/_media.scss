@@ -11,13 +11,38 @@
 
 @mixin respond($breakpoint){
 
-    @if $breakpoint == phone-xs {
+    @if $breakpoint == phone-6 {
+        @media only screen and (max-width: 20em){  // 240px
+            @content;
+        }
+    }
+
+    
+    @if $breakpoint == phone-5 {
+        @media only screen and (max-width: 20em){  // 320px
+            @content;
+        }
+    }
+
+    @if $breakpoint == phone-4 {
+        @media only screen and (max-width: 23.4375em){  // 375px
+            @content;
+        }
+    }
+
+    @if $breakpoint == phone-3 {
+        @media only screen and (max-width: 25.6875em){  // 411px
+            @content;
+        }
+    }
+
+    @if $breakpoint == phone-2 {
         @media only screen and (max-width: 27.5em){  // 440px
             @content;
         }
     }
 
-    @if $breakpoint == phone-sm {
+    @if $breakpoint == phone-1 {
         @media only screen and (max-width: 33.125em){  // 530px
             @content;
         }
@@ -29,7 +54,7 @@
         }
     }
 
-    @if $breakpoint == phone-1 {
+    @if $breakpoint == tab-alt {
         @media only screen and (max-width: 43.75em){  // 700px
             @content;
         }
@@ -48,7 +73,19 @@
     }
 
     @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em){  // 1800px
+        @media only screen and (min-width: 112.5em) and (max-width: 143.75em){  // 1800px
+            @content;
+        }
+    }
+
+    @if $breakpoint == large-desktop {
+        @media only screen and (min-width: 143.75em) and (max-width: 187.5em){  //2300px
+            @content;
+        }
+    }
+
+    @if $breakpoint == xl-desktop {
+        @media only screen and (min-width: 187.5em){  //3000px
             @content;
         }
     }
