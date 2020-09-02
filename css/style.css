@@ -425,9 +425,24 @@
 
 html {
   scroll-behavior: smooth; }
-  @media only screen and (min-width: 112.5em) {
+  @media only screen and (min-width: 187.5em) {
     html {
-      font-size: 18px; } }
+      font-size: 35px; } }
+  @media only screen and (min-width: 143.75em) and (max-width: 187.5em) {
+    html {
+      font-size: 25px; } }
+  @media only screen and (min-width: 112.5em) and (max-width: 143.75em) {
+    html {
+      font-size: 20px; } }
+  @media only screen and (max-width: 23.4375em) {
+    html {
+      font-size: 14px; } }
+  @media only screen and (max-width: 20em) {
+    html {
+      font-size: 11.5px; } }
+  @media only screen and (max-width: 20em) {
+    html {
+      font-size: 7px; } }
 
 .section-text {
   font-size: 4rem;
@@ -437,10 +452,19 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--bg-primary); }
-  @media only screen and (min-width: 112.5em) {
+  @media only screen and (min-width: 112.5em) and (max-width: 143.75em) {
     body .projects,
     body .contact {
-      margin-top: -3rem; } }
+      margin-top: 4rem; }
+    body .projects .project-content img {
+      width: 90%;
+      height: 90%; }
+    body .projects .project-content-btns {
+      width: 85%;
+      justify-content: space-between; }
+    body .projects .project-content-desc {
+      text-align: center;
+      padding: 0 0.5rem; } }
   @media only screen and (max-width: 56.25em) {
     body .nav {
       visibility: hidden; }
@@ -488,41 +512,56 @@ body {
       font-size: 1rem !important; }
       body .about-desc-container-text-icons {
         font-size: 1.3rem !important; }
-    body .projects .project-content-desc {
-      font-size: 1.3rem; }
-    body .contact .book {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url(../imgs/john-towner-JgOeRuGD_Y4-unsplash.jpg);
-      background-size: cover; }
-      body .contact .book-form {
+    body .projects {
+      margin-top: -1rem; }
+      body .projects .project-content-desc {
+        font-size: 1.3rem; }
+    body .contact {
+      margin-top: -1rem; }
+      body .contact .book {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url(../imgs/john-towner-JgOeRuGD_Y4-unsplash.jpg);
+        background-size: cover;
+        height: 80vh; }
+        body .contact .book-form {
+          width: 100%; }
+      body .contact .form-input {
         width: 100%; }
-    body .contact .form-input {
-      width: 100%; }
     body .navigation-btn {
       right: 1.75rem; }
     body .navigation-background {
-      right: 2.0625rem; } }
+      right: 2.0625rem; }
+    body .footer {
+      margin: 1rem 0; } }
   @media only screen and (max-width: 33.125em) {
     body .hero .container .hero-text-name {
       font-size: 2.5rem; }
     body .hero .container .hero-text-role {
       font-size: 1.5rem; }
-    body .about-desc-container-text {
-      font-size: 1.5rem !important; }
-      body .about-desc-container-text-icons {
-        font-size: 2rem !important; }
-    body .about-desc .about-desc-container-icons {
-      width: 70% !important; }
-    body .about-desc-img {
-      display: none; } }
+    body .about-desc {
+      margin-top: 0.5rem !important; }
+      body .about-desc-container-text {
+        font-size: 1.5rem !important; }
+        body .about-desc-container-text-icons {
+          font-size: 2rem !important; }
+      body .about-desc .about-desc-container-icons {
+        width: 70% !important; }
+      body .about-desc-img {
+        display: none; } }
   @media only screen and (max-width: 27.5em) {
-    body .hero .container .hero-text-name {
-      font-size: 2rem; }
-    body .hero .container .hero-text-role {
-      font-size: 1.2rem; }
-    body .hero .container .hero-social {
-      width: 50%; }
-      body .hero .container .hero-social a {
-        font-size: 2rem; }
+    body .hero {
+      text-align: center; }
+      body .hero .container .hero-text-name {
+        font-size: 2.3125rem; }
+      body .hero .container .hero-text-role {
+        font-size: 1.5rem; }
+      body .hero .container .hero-social {
+        width: 45%; }
+        body .hero .container .hero-social a {
+          font-size: 2rem; }
+      body .hero-btn-text {
+        font-size: 1.6rem !important; }
+      body .hero-btn-pointer {
+        font-size: 1.8rem !important; }
     body .about-desc-container-text {
       font-size: 1.3rem !important; }
       body .about-desc-container-text-icons {
@@ -531,8 +570,23 @@ body {
       width: 80% !important; }
     body .about-desc-img {
       display: none; }
-    body .projects .project-content-btns-demo, body .projects .project-content-btns-code {
-      font-size: 0.8rem;
-      padding: 0.5rem 1.2rem; }
-    body .projects .project-content-desc {
-      font-size: 1.15rem; } }
+    body .projects {
+      margin-top: -4rem; }
+      body .projects .project-content-btns-demo, body .projects .project-content-btns-code {
+        font-size: 0.8rem;
+        padding: 0.5rem 1.2rem; }
+      body .projects .project-content-desc {
+        font-size: 1.15rem; }
+    body .contact {
+      margin-top: -4rem; } }
+  @media only screen and (max-width: 25.6875em) {
+    body .navigation-btn, body .navigation-background {
+      right: 2rem; }
+    body .navigation .navigation-list {
+      top: 55%;
+      left: 50%; } }
+  @media only screen and (max-width: 23.4375em) {
+    body .projects {
+      margin-top: -4rem; }
+    body .contact {
+      margin-top: -5rem; } }
