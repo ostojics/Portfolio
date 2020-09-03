@@ -17,7 +17,8 @@
   background-image: linear-gradient(0deg, rgba(0, 12, 86, 0.6), rgba(44, 44, 44, 0.2)), url(../imgs/michael-d-rnKqWvO80Y4-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%); }
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  overflow-x: hidden; }
   .head .nav {
     display: flex;
     padding: 1.5rem 1rem;
@@ -434,13 +435,13 @@ html {
   @media only screen and (min-width: 112.5em) and (max-width: 143.75em) {
     html {
       font-size: 20px; } }
-  @media only screen and (max-width: 23.4375em) {
+  @media only screen and (max-width: 25.3125em) {
     html {
       font-size: 14px; } }
   @media only screen and (max-width: 20em) {
     html {
-      font-size: 11.5px; } }
-  @media only screen and (max-width: 20em) {
+      font-size: 12px; } }
+  @media only screen and (max-width: 15em) {
     html {
       font-size: 7px; } }
 
@@ -537,6 +538,8 @@ body {
       font-size: 2.5rem; }
     body .hero .container .hero-text-role {
       font-size: 1.5rem; }
+    body .hero .hero-social {
+      width: 45% !important; }
     body .about-desc {
       margin-top: 0.5rem !important; }
       body .about-desc-container-text {
@@ -585,7 +588,7 @@ body {
     body .navigation .navigation-list {
       top: 55%;
       left: 50%; } }
-  @media only screen and (max-width: 23.4375em) {
+  @media only screen and (max-width: 25.3125em) {
     body .projects {
       margin-top: -4rem; }
     body .contact {
