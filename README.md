@@ -6,4 +6,4 @@ Technologies i used: <br />
 -JavaScript <br />
 -Website is optimized for faster loading times <br />
 
-(not finished) <br />
+(work in progress) <br />
