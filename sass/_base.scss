@@ -24,7 +24,7 @@ html {
     }
 
     @include respond(phone-5){
-        font-size: 11.5px;
+        font-size: 12px;
     }
 
     @include respond(phone-6){
@@ -267,7 +267,9 @@ body{
                         font-size: 1.5rem;
                     }
                 }
-
+            }
+            .hero-social{
+                width: 45%!important;
             }
         }
 
