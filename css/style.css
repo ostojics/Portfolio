@@ -130,15 +130,17 @@
       flex: 1; }
       .about .about-desc-container-text {
         font-weight: 400;
-        font-size: 2rem; }
+        font-size: 1.5rem;
+        line-height: 150%; }
         .about .about-desc-container-text-icons {
           margin-top: 2rem;
           margin-bottom: 1.2rem;
           font-size: 1.5rem; }
       .about .about-desc-container-icons {
-        display: flex;
-        justify-content: space-around;
-        width: 50%; }
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        width: 40%; }
         .about .about-desc-container-icons i {
           font-size: 2rem;
           color: var(--text-primary); }
@@ -413,6 +415,11 @@
     top: 0;
     transform: rotate(-135deg); }
 
+.firebase {
+  width: 2.3rem;
+  height: 2.3rem;
+  margin: 0 auto; }
+
 .head .nav {
   min-height: 5vh; }
 
@@ -475,7 +482,7 @@ body {
     body .navigation {
       display: block !important; }
     body .about-desc-container-text {
-      font-size: 1.5rem !important; }
+      font-size: 1.25rem !important; }
     body .about-desc-container-icons {
       width: 70% !important; }
     body .about-desc-img img {
@@ -489,7 +496,9 @@ body {
       justify-content: space-between; }
     body .projects .project-content-desc {
       text-align: center;
-      padding: 0 0.5rem; } }
+      padding: 0 0.5rem; }
+    body .contact .book {
+      height: 65vh; } }
   @media only screen and (max-width: 43.75em) {
     body .hero .container .hero-text-name {
       font-size: 3.5rem; }
@@ -498,7 +507,7 @@ body {
     body .hero .container .hero-social {
       width: 35%; }
     body .about-desc-container-text {
-      font-size: 1.3rem !important; }
+      font-size: 1rem !important; }
     body .about-desc-container-icons {
       width: 90% !important; }
     body .contact .book {
@@ -525,7 +534,7 @@ body {
       body .contact .book {
         background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url(../imgs/john-towner-JgOeRuGD_Y4-unsplash.jpg);
         background-size: cover;
-        height: 80vh; }
+        height: 60vh; }
         body .contact .book-form {
           width: 100%; }
       body .contact .form-input {
@@ -546,7 +555,7 @@ body {
     body .about-desc {
       margin-top: 0.5rem !important; }
       body .about-desc-container-text {
-        font-size: 1.5rem !important; }
+        font-size: 1.2rem !important; }
         body .about-desc-container-text-icons {
           font-size: 2rem !important; }
       body .about-desc .about-desc-container-icons {
@@ -586,7 +595,7 @@ body {
     body .contact {
       margin-top: -4rem; }
       body .contact .book {
-        height: 65vh; } }
+        height: 50vh; } }
   @media only screen and (max-width: 25.6875em) {
     body .navigation-btn, body .navigation-background {
       right: 2rem; }
