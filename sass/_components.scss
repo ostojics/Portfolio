@@ -141,7 +141,8 @@
             flex: 1;
                 &-text{
                     font-weight: 400;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
+                    line-height: 150%;
 
                     &-icons{
                     margin-top: 2rem;
@@ -151,9 +152,10 @@
                 }
 
                 &-icons{
-                    display: flex;
-                    justify-content: space-around;
-                    width: 50%;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 1rem;
+                    width: 40%;
                     i{
                         font-size: 2rem;
                         color: var(--text-primary);
@@ -537,3 +539,10 @@
             transform: rotate(-135deg);
         }
     }
+
+//firebase icon
+.firebase {
+    width: 2.3rem;
+    height: 2.3rem;
+    margin: 0 auto;
+}

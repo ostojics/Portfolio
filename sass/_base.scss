@@ -92,7 +92,7 @@ body{
             &-desc{
                 &-container{
                     &-text{
-                        font-size: 1.5rem!important;
+                        font-size: 1.25rem!important;
                     }
 
                     &-icons{
@@ -130,6 +130,12 @@ body{
                 }
             }
         }
+
+        .contact {
+            .book {
+                height: 65vh;
+            }
+        }
     }
 
     // BREAKPOINT BETWEEN PHONE AND TABLET
@@ -156,7 +162,7 @@ body{
             &-desc{
                 &-container{
                     &-text{
-                        font-size: 1.3rem!important;
+                        font-size: 1rem!important;
                     }
 
                     &-icons{
@@ -231,7 +237,7 @@ body{
             .book{
                 background-image: linear-gradient(to right, rgba(255,255,255, .7) 0%,rgba(255,255,255, .7) 100%), url(../imgs/john-towner-JgOeRuGD_Y4-unsplash.jpg);
                 background-size: cover;
-                height: 80vh;
+                height: 60vh;
 
                 &-form{
                     width: 100%;
@@ -282,7 +288,7 @@ body{
                 margin-top: 0.5rem!important;
                 &-container{
                     &-text{
-                        font-size: 1.5rem!important;
+                        font-size: 1.2rem!important;
 
                         &-icons{
                             font-size: 2rem!important;
@@ -378,7 +384,7 @@ body{
             margin-top: -4rem;
 
             .book {
-                height: 65vh;
+                height: 50vh;
             }
         }
 
