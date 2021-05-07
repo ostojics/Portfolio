@@ -457,6 +457,9 @@ body {
     body .projects,
     body .contact {
       margin-top: 4rem; }
+      body .projects .book,
+      body .contact .book {
+        height: 73vh; }
     body .projects .project-content img {
       width: 90%;
       height: 90%; }
@@ -581,7 +584,9 @@ body {
       body .projects .project-content-desc {
         font-size: 1.15rem; }
     body .contact {
-      margin-top: -4rem; } }
+      margin-top: -4rem; }
+      body .contact .book {
+        height: 65vh; } }
   @media only screen and (max-width: 25.6875em) {
     body .navigation-btn, body .navigation-background {
       right: 2rem; }

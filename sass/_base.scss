@@ -49,6 +49,10 @@ body{
         .projects,
         .contact{
             margin-top: 4rem;
+
+            .book {
+                height: 73vh;
+            }
         }
 
         .projects{
@@ -372,6 +376,10 @@ body{
 
         .contact{
             margin-top: -4rem;
+
+            .book {
+                height: 65vh;
+            }
         }
 
     }
