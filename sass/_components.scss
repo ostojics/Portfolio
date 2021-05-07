@@ -159,6 +159,12 @@
                     i{
                         font-size: 2rem;
                         color: var(--text-primary);
+                        transition: all .2s;
+
+                        &:hover {
+                            cursor: pointer;
+                            transform: translateY(-3px);
+                        }
                     }
                 }
             }
@@ -545,4 +551,10 @@
     width: 2.3rem;
     height: 2.3rem;
     margin: 0 auto;
+    transition: all .2s;
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-3px);
+    }
 }

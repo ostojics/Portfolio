@@ -116,17 +116,17 @@
                 <h2 class="section-text">Contact Me</h2>
                 <div class="book">
                     <div class="book-form">
-                        <form class="form">
+                        <form name="contact" method="POST" data-netlify="true" class="form">
                             <div class="form-group">
-                                <input type="text" class="form-input" placeholder="Full Name" id="name">
+                                <input type="text" class="form-input" placeholder="Full Name" name="name" id="name">
                                 <label for="name" class="form-label">Full Name</label>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-input" placeholder="Email adress" id="email">
+                                <input type="email" class="form-input" placeholder="Email adress" name="email" id="email">
                                 <label for="name" class="form-label">Email adress</label>
                             </div>
                             <div class="form-group">
-                                <textarea name="Message" id="message" cols="30" rows="5" placeholder="Message" class="form-input"></textarea>
+                                <textarea name="Message" name="message" id="message" cols="30" rows="5" placeholder="Message" class="form-input"></textarea>
                                 <label for="name" class="form-label">Message</label>
                             </div>
                             <div class="form-group">
