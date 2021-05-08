@@ -207,7 +207,7 @@
                 &-img{
                     width: 50%;
                     height: 50%;
-                    border-radius: 1rem;
+                    border-radius: 5px;
                 }
     
                 &-desc{
@@ -215,6 +215,8 @@
                     font-size: 1.5rem;
                     font-weight: 400;
                     margin: 1.5rem 0;
+                    width: 80%;
+                    text-align: center;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
