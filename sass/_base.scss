@@ -224,7 +224,7 @@ body{
         }
 
         .projects{
-            margin-top: 1.2rem;
+            margin-top: 1.5rem;
             .project{
                 &-content{
                     &-desc{
@@ -235,7 +235,7 @@ body{
         }
 
         .contact{
-            margin-top: -1rem;
+            margin-top: 1.5rem;
             .book{
                 background-image: linear-gradient(to right, rgba(255,255,255, .7) 0%,rgba(255,255,255, .7) 100%), url(../imgs/john-towner-JgOeRuGD_Y4-unsplash.jpg);
                 background-size: cover;
@@ -364,7 +364,7 @@ body{
         }
 
         .projects{
-            margin-top: -4rem;
+            margin-top: 1rem;
             .project{
                 &-content{
                     &-btns{
@@ -383,7 +383,7 @@ body{
         }
 
         .contact{
-            margin-top: -4rem;
+            margin-top: 1rem;
 
         }
 
@@ -406,11 +406,11 @@ body{
 
     @include respond(phone-4){
         .projects{
-            margin-top: -4rem;
+            margin-top: 1rem;
         }
 
         .contact{
-            margin-top: -5rem;
+            margin-top: 1rem;
         }
     }
 
